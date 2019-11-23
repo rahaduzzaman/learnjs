@@ -28,6 +28,15 @@ console.log(thirdLetterOflastName);
 let secondLastLetterOflastName = lastName[lastNameLength - 2]; // -2 here instead of -1 is because javascript starts counting from 0;
 console.log(secondLastLetterOflastName);
 
+// WORD BLANKS
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    let result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+    return result;
+}
+
+//call the funtion and pass parameters
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
 
 
 
