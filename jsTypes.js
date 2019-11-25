@@ -1,3 +1,6 @@
+section="Types In JavaScript", sectionDivider = "====================================\n*\n*---->\t" + section +"\n*\n====================================";
+console.log(sectionDivider);
+
 // Type Basic: Strings and Numbers
 
 let value = "apple";

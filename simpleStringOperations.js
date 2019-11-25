@@ -1,3 +1,7 @@
+
+section="Strings In JavaScript", 
+sectionDivider = "====================================\n*\n*---->\t" + section +"\n*\n====================================";
+console.log(sectionDivider);
 // concatenating String
 let firstName = "Mohammad ", lastName = "Rahaduzzaman";
 console.log(firstName + lastName);
