@@ -3,16 +3,36 @@
 // return a string in reverse
 // for ex: reverseString("hello") --> 'olleh'
 function reverseString(str) {
+    ////////////////////////////////////
     // return str
     //     .split('')
     //     .reverse()
     //     .join('');
-    var strArr = str.split('');
-    var revArr = [];
-    for (var i = strArr.length - 1; i >= 0; i--) {
-        // console.log(strArr[i]);
-        revArr.push(strArr[i]).join('');
-    }
-    return revArr;
+    /* _____ With loop not using JS Reverse loop method _____*/
+    // let strArr = str.split("");
+    // let revArr: any = [];
+    // for (let i = strArr.length - 1; i >= 0; i--) {
+    //   revArr.push(strArr[i]);
+    // }
+    // return revArr.join("");
+    /* _____ With loop not using JS loop method _____*/
+    // let revStr = "";
+    // for (let i = 0; i < str.length; i++) {
+    //   revStr = str[i] + revStr;
+    // }
+    // return revStr;
+    ///////////////////////////////////////
+    // let revStr = "";
+    // for (let char of str) {
+    //   revStr = char + revStr;
+    // }
+    // return revStr;
+    ///////////////////////////////////////
+    // let revStr = "";
+    // str.split("").forEach((char) => (revStr = char + revStr));
+    // return revStr;
+    ///////////////////////////////////////
+    var revStr = "";
+    return str.split("").reduce(function (revStr, char) { return (revStr = char + revStr); }, "");
 }
-console.log(reverseString("Rahad"));
+console.log(reverseString("Wonderful"));
