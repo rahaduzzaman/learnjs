@@ -70,12 +70,16 @@ function capitalizeLetters(str) {
     // }
     // return word.join(" ");
     /////////////////////////////////////////////
-    return str
-        .toLowerCase()
-        .split(" ")
-        .map(function (word) {
-        return word[0].toUpperCase() + word.substring(1);
-    })
-        .join(" ");
+    // return str
+    //   .toLowerCase()
+    //   .split(" ")
+    //   .map((word) => {
+    //     return word[0].toUpperCase() + word.substring(1);
+    //   })
+    //   .join(" ");
+    ////////////////////////////////////////////
+    return str.replace(/\b[a-z]/gi, function (char) {
+        return char.toUpperCase();
+    });
 }
 console.log(capitalizeLetters("i love javascript"));
