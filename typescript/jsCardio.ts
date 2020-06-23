@@ -37,6 +37,8 @@ function reverseString(str: string) {
 }
 // reverseString("Wonderful");
 
+
+
 //CHALLANGE 2: VALIDATE A PALINDROME
 //Reurn true if palindrome and false if not
 // for example: isPalindrome(racecar) == 'true';
@@ -59,33 +61,45 @@ function reverseString(str: string) {
 //Reurn an integer in reverse
 // for example: reverseInt(123) = '321';
 
-// function reverseInt(integer: number) {
-//   const revInt = integer.toString().split("").reverse().join("");
-//   return parseInt(revInt) * Math.sign(integer);
-// }
+function reverseInt(integer: number) {
+  const revInt = integer.toString().split("").reverse().join("");
+  return parseInt(revInt) * Math.sin(integer);
+}
 // console.log(reverseInt(1234));
-///////////////////////////////////////////
+
+
+
+
 //CHALLANGE 4: CAPITALIZE A WORD
 //Return a string with first letter of each word is Capitalize
 //ex: capitalizeLetters('i love javascript') === "I love Javascript"
-//function capitalizeLetters(str: string) {
-// let word = str.toLowerCase().split(" ");
-// for (let i = 0; i < word.length; i++) {
-//   word[i] = word[i].substring(0, 1).toUpperCase() + word[i].substring(1);
-// }
-// return word.join(" ");
-/////////////////////////////////////////////
-// return str
-//   .toLowerCase()
-//   .split(" ")
-//   .map((word) => {
-//     return word[0].toUpperCase() + word.substring(1);
-//   })
-//   .join(" ");
-////////////////////////////////////////////
-//   return str.replace(/\b[a-z]/gi, function (char) {
-//     return char.toUpperCase();
-//   });
-// }
+function capitalizeLetters(str: string) {
+  // let word = str.toLowerCase().split(" ");
+  // for (let i = 0; i < word.length; i++) {
+  //   word[i] = word[i].substring(0, 1).toUpperCase() + word[i].substring(1);
+  // }
+  // return word.join(" ");
+  /////////////////////////////////////////////
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((word) => {
+      return word[0].toUpperCase() + word.substring(1);
+    })
+    .join(" ");
+  ////////////////////////////////////////////
+  // return str.replace(/\b[a-z]/gi, function (char) {
+  //   return char.toUpperCase();
+  // });
+}
 // console.log(capitalizeLetters("i love javascript"));
-//////////////////////////////////////////////
+
+
+
+
+//CHALLANGE 5: MAX CHARACTER
+// Return the character that is most common in the string
+// ex. maxCharacter(Java) == "a"
+function maxCharacter(str: String) {
+
+}
