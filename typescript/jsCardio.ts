@@ -101,5 +101,24 @@ function capitalizeLetters(str: string) {
 // Return the character that is most common in the string
 // ex. maxCharacter(Java) == "a"
 function maxCharacter(str: String) {
-
+  const charMap: any = {};
+  let maxChar = '';
+  let maxNum = 0;
+  str.split('').forEach((char) => {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
+  })
+  console.log(charMap);
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
 }
+
+console.log(maxCharacter('mmmaaa'))

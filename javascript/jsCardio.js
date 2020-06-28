@@ -54,12 +54,11 @@ function reverseString(str) {
 //CHALLANGE 3: REVERSE AN INTEGER
 //Reurn an integer in reverse
 // for example: reverseInt(123) = '321';
-// function reverseInt(integer: number) {
-//   const revInt = integer.toString().split("").reverse().join("");
-//   return parseInt(revInt) * Math.sign(integer);
-// }
+function reverseInt(integer) {
+    var revInt = integer.toString().split("").reverse().join("");
+    return parseInt(revInt) * Math.sin(integer);
+}
 // console.log(reverseInt(1234));
-///////////////////////////////////////////
 //CHALLANGE 4: CAPITALIZE A WORD
 //Return a string with first letter of each word is Capitalize
 //ex: capitalizeLetters('i love javascript') === "I love Javascript"
@@ -70,17 +69,41 @@ function capitalizeLetters(str) {
     // }
     // return word.join(" ");
     /////////////////////////////////////////////
-    // return str
-    //   .toLowerCase()
-    //   .split(" ")
-    //   .map((word) => {
-    //     return word[0].toUpperCase() + word.substring(1);
-    //   })
-    //   .join(" ");
+    return str
+        .toLowerCase()
+        .split(" ")
+        .map(function (word) {
+        return word[0].toUpperCase() + word.substring(1);
+    })
+        .join(" ");
     ////////////////////////////////////////////
-    return str.replace(/\b[a-z]/gi, function (char) {
-        return char.toUpperCase();
-    });
+    // return str.replace(/\b[a-z]/gi, function (char) {
+    //   return char.toUpperCase();
+    // });
 }
-console.log(capitalizeLetters("i love javascript"));
-//////////////////////////////////////////////
+// console.log(capitalizeLetters("i love javascript"));
+//CHALLANGE 5: MAX CHARACTER
+// Return the character that is most common in the string
+// ex. maxCharacter(Java) == "a"
+function maxCharacter(str) {
+    var charMap = {};
+    var maxChar = '';
+    var maxNum = 0;
+    str.split('').forEach(function (char) {
+        if (charMap[char]) {
+            charMap[char]++;
+        }
+        else {
+            charMap[char] = 1;
+        }
+    });
+    console.log(charMap);
+    for (var char in charMap) {
+        if (charMap[char] > maxNum) {
+            maxNum = charMap[char];
+            maxChar = char;
+        }
+    }
+    return maxChar;
+}
+console.log(maxCharacter('mmmaaa'));
