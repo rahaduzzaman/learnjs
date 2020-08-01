@@ -121,4 +121,7 @@ function maxCharacter(str: String) {
   return maxChar;
 }
 
-console.log(maxCharacter('mmmaaa'))
+// console.log(maxCharacter('mmmaaa'))
+
+//CHALLANGE 6: FIZZBUZZ
+//Write a program that prints all the number for 1 to 100, For multiple of 3
