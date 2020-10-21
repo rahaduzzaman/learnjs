@@ -1,0 +1,28 @@
+{
+  "name": "learnjs",
+  "version": "1.0.0",
+  "description": "A javascript learning purpose project with typescript",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "tsc && node javascript/jsCardio.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahaduzzaman/learnjs.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "js"
+  ],
+  "author": "md.rahaduzzaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahaduzzaman/learnjs/issues"
+  },
+  "homepage": "https://github.com/rahaduzzaman/learnjs#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
