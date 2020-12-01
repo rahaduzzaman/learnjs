@@ -63,23 +63,24 @@ function reverseString(str) {
 //CHALLANGE 4: CAPITALIZE A WORD
 //Return a string with first letter of each word is Capitalize
 //ex: capitalizeLetters('i love javascript') === "I love Javascript"
-function capitalizeLetters(str) {
-    // let word = str.toLowerCase().split(" ");
-    // for (let i = 0; i < word.length; i++) {
-    //   word[i] = word[i].substring(0, 1).toUpperCase() + word[i].substring(1);
-    // }
-    // return word.join(" ");
-    /////////////////////////////////////////////
-    // return str
-    //   .toLowerCase()
-    //   .split(" ")
-    //   .map((word) => {
-    //     return word[0].toUpperCase() + word.substring(1);
-    //   })
-    //   .join(" ");
-    ////////////////////////////////////////////
-    return str.replace(/\b[a-z]/gi, function (char) {
-        return char.toUpperCase();
-    });
-}
-console.log(capitalizeLetters("i love javascript"));
+//function capitalizeLetters(str: string) {
+// let word = str.toLowerCase().split(" ");
+// for (let i = 0; i < word.length; i++) {
+//   word[i] = word[i].substring(0, 1).toUpperCase() + word[i].substring(1);
+// }
+// return word.join(" ");
+/////////////////////////////////////////////
+// return str
+//   .toLowerCase()
+//   .split(" ")
+//   .map((word) => {
+//     return word[0].toUpperCase() + word.substring(1);
+//   })
+//   .join(" ");
+////////////////////////////////////////////
+//   return str.replace(/\b[a-z]/gi, function (char) {
+//     return char.toUpperCase();
+//   });
+// }
+// console.log(capitalizeLetters("i love javascript"));
+//////////////////////////////////////////////
