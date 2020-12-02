@@ -27,9 +27,10 @@ function updateRecords(obj, id, prop, value) {
         delete obj[id][prop];
     }
     else if (prop === "tracks") {
-        if (obj[id].hasOwnProperty(prop) === false) {
-            obj[id][prop] = [];
-        }
+        /* if (obj[id].hasOwnProperty(prop) === false) {
+          obj[id][prop] = [];
+        } */
+        obj[id][prop] = obj[id][prop] || []; // Alternate approach
         obj[id][prop].push(value);
     }
     else {
