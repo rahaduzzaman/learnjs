@@ -30,7 +30,7 @@ function lookUpProfile(name: any, prop: string | Array<string>) {
   // Only change code below this line
   for (var i = 0; i < contacts.length; i++) {
     if (contacts[i].firstName === name) {
-      return contacts[i][prop] || "No such property";
+      return /* contacts[i][prop] || */ "No such property";
     }
   }
   return "No such contact";
