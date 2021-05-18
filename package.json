@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "js": "tsc && node javascript/jsCardio.js"
+    "cardio": "tsc && node javascript/jsCardio.js",
+    "regex": "tsc && node javascript/freecodecamp/Intermediate/regex.js"
   },
   "repository": {
     "type": "git",

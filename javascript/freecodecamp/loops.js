@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict";
 //Nested loops {Multidimentional Array}
 function multiplyAll(arr) {
     var product = 1;
@@ -16,3 +16,14 @@ console.log(multiplyAll([
     [3, 4],
     [5, 6, 7],
 ]));
+ */
+
+function uniqPair(inArr) {
+  for (var i = 0; i < inArr.length; i++) {
+    var wa = inArr[i].split("");
+    //   for(var j = )
+    console.log("-->" + wa);
+  }
+}
+
+uniqPair(["similar", "ground", "heaven", "hell", "earth", "liar", "shelf"]);
