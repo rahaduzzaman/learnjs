@@ -62,7 +62,42 @@ console.log(result);
 /* ==> ch-8 : Match Single Character with Multiple Possibilities */
 // N: Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
 // Q: Use a character class with vowels (a, e, i, o, u) in your regex vowelRegex to find all the vowels in the string quoteSample.
-var quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
-var vowelRegex = /[aeiou]/gi; // Change this line
-var result = quoteSample.match(vowelRegex); // Change this line
+/*
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result = quoteSample.match(vowelRegex); // Change this line
+console.log(result);
+ */
+// ________________________________________________________________________
+/* ==> ch-9 : Match Letters of the Alphabet */
+//N: Inside a character set, you can define a range of characters to match using a hyphen character: -.
+/* // Example:
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let bgRegex = /[a-e]at/;
+catStr.match(bgRegex);
+batStr.match(bgRegex);
+matStr.match(bgRegex);
+ */
+/* //Actual Test
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
+console.log(result);
+ */
+// ________________________________________________________________________
+/* ==> ch-10 : Match Numbers and Letters of the Alphabet */
+/*
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+console.log(result);
+*/
+// ________________________________________________________________________
+/* ==> ch-10 : Match Single Characters Not Specified */
+// Problem: Create a single regex that matches all characters that are not a number or a vowel. Remember to include the appropriate flags in the regex.
+var quoteSample = "3 blind mice.";
+var myRegex = /[^aeiou0-9]/gi; // Change this line
+var result = quoteSample.match(myRegex); // Change this line
 console.log(result);

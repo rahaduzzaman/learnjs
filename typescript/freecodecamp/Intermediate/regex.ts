@@ -19,7 +19,7 @@ console.log(result);
  */
 
 // ________________________________________________________________________
- /* ==> ch-3 : Match a Literal String with Different Possibilities */
+/* ==> ch-3 : Match a Literal String with Different Possibilities */
 /* 
 let petString = "James has a pet cat.";
 let petRegex = /dog|cat|bird|fish/; // Change this line
@@ -76,5 +76,40 @@ let result = quoteSample.match(vowelRegex); // Change this line
 console.log(result);
  */
 
- // ________________________________________________________________________
-/* ==> ch-8 : Match Single Character with Multiple Possibilities */
+// ________________________________________________________________________
+/* ==> ch-9 : Match Letters of the Alphabet */
+//N: Inside a character set, you can define a range of characters to match using a hyphen character: -.
+
+/* // Example:
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let bgRegex = /[a-e]at/;
+catStr.match(bgRegex);
+batStr.match(bgRegex);
+matStr.match(bgRegex);
+ */
+
+/* //Actual Test
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
+console.log(result);
+ */
+
+// ________________________________________________________________________
+/* ==> ch-10 : Match Numbers and Letters of the Alphabet */
+/* 
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+console.log(result);
+*/
+
+// ________________________________________________________________________
+/* ==> ch-10 : Match Single Characters Not Specified */
+// Problem: Create a single regex that matches all characters that are not a number or a vowel. Remember to include the appropriate flags in the regex.
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+console.log(result);
