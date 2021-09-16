@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cardio": "tsc && node javascript/jsCardio.js",
+    "fcc": "tsc && node javascript/freecodecamp/basicJavaScript/BasicChallanges.js",
     "regex": "tsc && node javascript/freecodecamp/Intermediate/regex.js"
   },
   "repository": {
